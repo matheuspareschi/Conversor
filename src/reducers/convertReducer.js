@@ -5,8 +5,11 @@ const INITIAL_STATE = []
 export default function convertReducer (state = INITIAL_STATE, action) {
     if (action.type === Types.CONVERTER_MOEDAS) {
         const result = action.payload.data;
-
-        return result
+        const quantity = action.quantity;
+        return {
+            result: result,
+            quantity: quantity
+        }
     } else { 
         return state;
     }

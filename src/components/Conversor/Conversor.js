@@ -21,7 +21,7 @@ const Conversor = props => {
 
                 <div className="formFooter">
                     <p> Valor convertido: </p>
-                    <p className="convertValue"> {props.conversor.quotes && props.conversor.quotes[Object.keys(props.conversor.quotes)[0]].toFixed(2)} </p>
+                    <p className="convertValue"> {props.conversor.quantity && props.conversor.quantity} </p>
                 </div>
             </div>
         </div>
